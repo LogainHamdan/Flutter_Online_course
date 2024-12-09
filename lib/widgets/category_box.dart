@@ -29,12 +29,17 @@ class CategoryBox extends StatelessWidget {
             decoration: BoxDecoration(
               color: isSelected ? AppColor.red : Colors.white,
               boxShadow: [
+                // BoxShadow(
+                //   color: AppColor.shadowColor.withOpacity(0.1),
+                //   spreadRadius: 1,
+                //   blurRadius: 1,
+                //   offset: Offset(1, 1), // changes position of shadow
+                // ),
                 BoxShadow(
-                  color: AppColor.shadowColor.withOpacity(0.1),
-                  spreadRadius: 1,
-                  blurRadius: 1,
-                  offset: Offset(1, 1), // changes position of shadow
-                ),
+                    color: AppColor.appBarColor.withOpacity(0.1),
+                    spreadRadius: 1,
+                    blurRadius: 1,
+                    offset: Offset(1, 1))
               ],
               shape: BoxShape.circle,
             ),
